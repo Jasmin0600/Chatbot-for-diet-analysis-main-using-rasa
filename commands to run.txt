@@ -1,0 +1,24 @@
+
+
+
+
+1. rasa run actions
+2.a)rasa train
+  b)rasa run --endpoints endpoints.yml --port 5005 --credentials credentials.yml --cors "*"
+3.  python web_app.py
+
+1st cmd:- How to train rasa nlu and rasa core
+-------------------------
+command: train nlu by running - python nlu_training.py
+command: python -m rasa_core.train -d domain.yml -s data/stories.md -o models/dialogue -c policy.yml
+command: python -m rasa_core.run --enable_api -d models/dialogue
+ -u models/nlu/default/current --cors"*" -o out.log --endpoints endpoint.yml
+ --port 5005 --credentials credentials.yml
+
+2nd cmd: run web_app
+----------------------------
+command: python web_app.py
+
+3rd Cmd: run actions
+-------------------------
+command: python -m rasa_core_sdk.endpoint --actions action

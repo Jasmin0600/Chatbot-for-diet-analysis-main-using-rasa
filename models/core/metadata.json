@@ -1,0 +1,64 @@
+{
+  "action_fingerprints": {
+    "BMR_form": {
+      "active_loop": [
+        "BMR_form",
+        null,
+        "should_not_be_set"
+      ]
+    },
+    "water_intake_form": {
+      "active_loop": [
+        "water_intake_form",
+        null,
+        "should_not_be_set"
+      ]
+    },
+    "diet_form": {
+      "active_loop": [
+        "should_not_be_set",
+        null,
+        "diet_form"
+      ]
+    },
+    "food_form": {
+      "active_loop": [
+        null,
+        "should_not_be_set",
+        "food_form"
+      ]
+    },
+    "BMI_form": {
+      "active_loop": [
+        "BMI_form",
+        null,
+        "should_not_be_set"
+      ]
+    },
+    "name_form": {
+      "active_loop": [
+        "name_form",
+        null,
+        "should_not_be_set"
+      ]
+    }
+  },
+  "python": "3.6.13",
+  "max_histories": [
+    5,
+    null,
+    5,
+    5
+  ],
+  "ensemble_name": "rasa.core.policies.ensemble.SimplePolicyEnsemble",
+  "policy_names": [
+    "rasa.core.policies.memoization.MemoizationPolicy",
+    "rasa.core.policies.rule_policy.RulePolicy",
+    "rasa.core.policies.unexpected_intent_policy.UnexpecTEDIntentPolicy",
+    "rasa.core.policies.ted_policy.TEDPolicy"
+  ],
+  "trained_at": "20220412-154810",
+  "rasa": "2.8.25",
+  "tensorflow": "2.6.2",
+  "sklearn": "0.22.2.post1"
+}
